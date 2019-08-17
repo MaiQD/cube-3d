@@ -110,31 +110,43 @@
         
         /* 正面 */
         .maxbox li:nth-child(1){
+            background: url("img/1.jpg") no-repeat 0 0;
+            background-size: cover;
             -webkit-transform:translateZ(100px);
         }
         
         /* 背面 */
         .maxbox li:nth-child(2){
+            background: url("img/2.jpg") no-repeat 0 0;
+            background-size: cover;
             -webkit-transform:rotateX(180deg) translateZ(100px);
         }
         
         /* 下面 */
         .maxbox li:nth-child(3){
+            background: url("img/3.jpg") no-repeat 0 0;
+            background-size: cover;
             -webkit-transform:rotateX(-90deg) translateZ(100px);
         }
         
         /* 上面 */
         .maxbox li:nth-child(4){
+            background: url("img/4.jpg") no-repeat 0 0;
+            background-size: cover;
 			-webkit-transform:rotateX(90deg) translateZ(100px);
 		}
 
         /* 左边 */
 		.maxbox li:nth-child(5){
+            background: url("img/5.jpg") no-repeat 0 0;
+            background-size: cover;
 			-webkit-transform:rotateY(-90deg) translateZ(100px);
 		}
 
         /* 右边 */
 		.maxbox li:nth-child(6){
+            background: url("img/6.jpg") no-repeat 0 0;
+            background-size: cover;
 			-webkit-transform:rotateY(90deg) translateZ(100px);
 		}
 
@@ -156,7 +168,9 @@
 		.box:hover ol li:nth-child(6){
 			-webkit-transform:rotateY(90deg) translateZ(300px);
 		}
-
+        .maxbox:hover li{
+            opacity: 1;
+        }
         @keyframes move{
             0%{
                 transform:rotateX(13deg) rotateY(0deg);
